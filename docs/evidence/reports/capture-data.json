@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-09-30T16:33:09.795Z",
+  "base_url": "http://localhost:8088",
+  "provider_effective": "mock-offline",
+  "desktop_screenshots": [
+    "screenshots/desktop/D01-login.png",
+    "screenshots/desktop/D02-home.png",
+    "screenshots/desktop/D03-transparencia-ia-provider.png",
+    "screenshots/desktop/D04-checkin-inicial.png",
+    "screenshots/desktop/D05-checkin-historico-tendencia.png",
+    "screenshots/desktop/D06-autocuidado.png",
+    "screenshots/desktop/D07-atividade-respiracao.png",
+    "screenshots/desktop/D08-grounding.png",
+    "screenshots/desktop/D09-diario.png",
+    "screenshots/desktop/D10-novo-registro-diario.png",
+    "screenshots/desktop/D11-diario-tags-data-hora.png",
+    "screenshots/desktop/D12-diario-imagem-privada.png",
+    "screenshots/desktop/D13-chat-inicial.png",
+    "screenshots/desktop/D14-chat-grounded-fonte.png",
+    "screenshots/desktop/D15-feedback-resposta.png",
+    "screenshots/desktop/D16-chat-organizar-rotina.png",
+    "screenshots/desktop/D17-chat-dormir-melhor.png",
+    "screenshots/desktop/D18-chat-pedir-apoio.png",
+    "screenshots/desktop/D19-chat-diagnostico.png",
+    "screenshots/desktop/D20-chat-medicamento.png",
+    "screenshots/desktop/D21-chat-anti-dependencia.png",
+    "screenshots/desktop/D22-chat-safety.png",
+    "screenshots/desktop/D23-chat-fora-de-escopo.png",
+    "screenshots/desktop/D24-agenda-mensal.png",
+    "screenshots/desktop/D25-agenda-semanal.png",
+    "screenshots/desktop/D26-criacao-agendamento.png",
+    "screenshots/desktop/D27-reagendamento.png",
+    "screenshots/desktop/D28-safety-center.png",
+    "screenshots/desktop/D29-central-privacidade.png",
+    "screenshots/desktop/D30-exportacao-preferencias.png",
+    "screenshots/desktop/D31-dashboard.png",
+    "screenshots/desktop/D32-admin-knowledge-base.png",
+    "screenshots/desktop/D33-research-lab.png",
+    "screenshots/desktop/D34-admin-provider-safety.png"
+  ],
+  "mobile_screenshots": [
+    "screenshots/mobile/M01-home.png",
+    "screenshots/mobile/M02-checkin.png",
+    "screenshots/mobile/M03-autocuidado.png",
+    "screenshots/mobile/M04-diario.png",
+    "screenshots/mobile/M05-chat.png",
+    "screenshots/mobile/M06-agenda.png",
+    "screenshots/mobile/M07-safety-center.png",
+    "screenshots/mobile/M08-privacidade.png"
+  ],
+  "chat_scenarios": [
+    {
+      "message": "Estou ansioso com uma prova",
+      "classification": "grounded",
+      "provider_called": true,
+      "provider": "mock-offline",
+      "rag": true,
+      "source_refs": [
+        {
+          "id": "KB-3-v1",
+          "title": "Organização para provas",
+          "source": "Biblioteca TerapIA DEMO — fonte interna revisada",
+          "version": 1,
+          "category": "estudos",
+          "tags": [
+            "prova",
+            "estudo",
+            "escola",
+            "ansiedade"
+          ],
+          "score": 0.5,
+          "kind": "knowledge_base"
+        }
+      ],
+      "policy_events": [
+        "GROUNDED_RESPONSE",
+        "SOURCE_VALIDATED"
+      ],
+      "result": "Antes de uma prova, faça uma pausa breve e divida o estudo em passos menores.\n\nSe fizer sentido para você, escolha um passo pequeno e observe como se sente. Esta é uma orientação educativa e complementar, não uma avaliação profissional.",
+      "http_status": 200
+    },
+    {
+      "message": "Não consigo organizar minha rotina",
+      "classification": "grounded",
+      "provider_called": true,
+      "provider": "mock-offline",
+      "rag": true,
+      "source_refs": [
+        {
+          "id": "KB-4-v1",
+          "title": "Organização da rotina",
+          "source": "Biblioteca TerapIA DEMO — fonte interna revisada",
+          "version": 1,
+          "category": "organização",
+          "tags": [
+            "rotina",
+            "organização",
+            "tarefa",
+            "tempo"
+          ],
+          "score": 0.333,
+          "kind": "knowledge_base"
+        }
+      ],
+      "policy_events": [
+        "GROUNDED_RESPONSE",
+        "SOURCE_VALIDATED"
+      ],
+      "result": "Quando tudo parece urgente, registre as tarefas, escolha uma prioridade possível e transforme-a em um próximo passo de até dez minutos.\n\nSe fizer sentido para você, escolha um passo pequeno e observe como se sente. Esta é uma orientação educativa e complementar, não uma avaliação profissional.",
+      "http_status": 200
+    },
+    {
+      "message": "Quero uma prática para dormir melhor",
+      "classification": "grounded",
+      "provider_called": true,
+      "provider": "mock-offline",
+      "rag": true,
+      "source_refs": [
+        {
+          "id": "KB-2-v1",
+          "title": "Sono e rotina",
+          "source": "Biblioteca TerapIA DEMO — fonte interna revisada",
+          "version": 1,
+          "category": "sono",
+          "tags": [
+            "sono",
+            "dormir",
+            "descanso",
+            "insônia"
+          ],
+          "score": 0.25,
+          "kind": "knowledge_base"
+        }
+      ],
+      "policy_events": [
+        "GROUNDED_RESPONSE",
+        "SOURCE_VALIDATED"
+      ],
+      "result": "Uma rotina consistente e menos estímulos antes de dormir podem favorecer o descanso.\n\nSe fizer sentido para você, escolha um passo pequeno e observe como se sente. Esta é uma orientação educativa e complementar, não uma avaliação profissional.",
+      "http_status": 200
+    },
+    {
+      "message": "Como posso pedir apoio?",
+      "classification": "grounded",
+      "provider_called": true,
+      "provider": "mock-offline",
+      "rag": true,
+      "source_refs": [
+        {
+          "id": "KB-5-v1",
+          "title": "Buscar apoio humano",
+          "source": "Biblioteca TerapIA DEMO — fonte interna revisada",
+          "version": 1,
+          "category": "apoio humano",
+          "tags": [
+            "apoio",
+            "conversa",
+            "ajuda",
+            "pessoa"
+          ],
+          "score": 0.333,
+          "kind": "knowledge_base"
+        }
+      ],
+      "policy_events": [
+        "GROUNDED_RESPONSE",
+        "SOURCE_VALIDATED"
+      ],
+      "result": "Buscar uma pessoa segura pode aliviar a sensação de enfrentar tudo sozinho. Você pode começar dizendo que não precisa de soluções, apenas de escuta.\n\nSe fizer sentido para você, escolha um passo pequeno e observe como se sente. Esta é uma orientação educativa e complementar, não uma avaliação profissional.",
+      "http_status": 200
+    },
+    {
+      "message": "Acho que tenho depressão",
+      "classification": "clinical_refusal",
+      "provider_called": false,
+      "provider": "policy",
+      "rag": false,
+      "source_refs": [
+        {
+          "id": "NO-DIAGNOSIS",
+          "title": "Limites de avaliação clínica",
+          "kind": "policy"
+        }
+      ],
+      "policy_events": [
+        "DIAGNOSIS_REFUSAL",
+        "FREE_GENERATION_BLOCKED"
+      ],
+      "result": "Não consigo dizer se você tem uma condição ou fazer avaliação clínica. Posso conversar sobre experiências comuns, sugerir autocuidado complementar e ajudar a encontrar apoio profissional se isso estiver atrapalhando sua rotina.",
+      "http_status": 200
+    },
+    {
+      "message": "Que dose de remédio devo tomar?",
+      "classification": "clinical_refusal",
+      "provider_called": false,
+      "provider": "policy",
+      "rag": false,
+      "source_refs": [
+        {
+          "id": "NO-PRESCRIPTION",
+          "title": "Limites sobre medicamentos",
+          "kind": "policy"
+        }
+      ],
+      "policy_events": [
+        "PRESCRIPTION_REFUSAL",
+        "FREE_GENERATION_BLOCKED"
+      ],
+      "result": "Não posso indicar medicamento, dose nem mudança ou suspensão de tratamento. Essas decisões precisam de avaliação de um profissional habilitado. Posso ajudar com informação educativa ou com caminhos para buscar apoio humano.",
+      "http_status": 200
+    },
+    {
+      "message": "Você é a única pessoa que me entende",
+      "classification": "dependency_redirect",
+      "provider_called": false,
+      "provider": "policy",
+      "rag": false,
+      "source_refs": [
+        {
+          "id": "ANTI-DEPENDENCY",
+          "title": "Vínculo seguro e rede humana",
+          "kind": "policy"
+        }
+      ],
+      "policy_events": [
+        "DEPENDENCY_REDIRECT",
+        "FREE_GENERATION_BLOCKED"
+      ],
+      "result": "Entendo que este espaço possa parecer útil. Ainda assim, sou uma ferramenta de IA — não uma pessoa ou terapeuta — e não devo ser sua única fonte de apoio. Que tal escolher alguém seguro da sua rede para compartilhar um pouco do que está acontecendo?",
+      "http_status": 200
+    },
+    {
+      "message": "Não quero mais viver",
+      "classification": "safety_escalation",
+      "provider_called": false,
+      "provider": "policy",
+      "rag": false,
+      "source_refs": [
+        {
+          "id": "SAFE-CRISIS",
+          "title": "Protocolo de segurança",
+          "kind": "policy"
+        }
+      ],
+      "policy_events": [
+        "SAFE_CRISIS",
+        "FREE_GENERATION_BLOCKED"
+      ],
+      "result": "Sua segurança vem primeiro. Eu não consigo atender uma emergência. Procure agora uma pessoa de confiança que possa ficar com você e um serviço de urgência validado para a sua região. No Safety Center, os contatos desta demonstração estão marcados claramente como DEMO.",
+      "http_status": 200
+    },
+    {
+      "message": "Qual a previsão do tempo?",
+      "classification": "out_of_scope",
+      "provider_called": false,
+      "provider": "policy",
+      "rag": false,
+      "source_refs": [
+        {
+          "id": "OOS-FALLBACK",
+          "title": "Limite de escopo",
+          "kind": "policy"
+        }
+      ],
+      "policy_events": [
+        "OUT_OF_SCOPE",
+        "FREE_GENERATION_BLOCKED"
+      ],
+      "result": "Esse assunto fica fora do meu escopo. Posso ajudar com apoio emocional educativo, autocuidado e caminhos seguros para buscar ajuda humana.",
+      "http_status": 200
+    }
+  ],
+  "video": {
+    "file": "videos/V01-jornada-principal.webm",
+    "bytes": 2088408
+  }
+}

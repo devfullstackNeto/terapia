@@ -1,0 +1,5 @@
+# Segurança
+
+Controles: Argon2id, JWT curto e assinado, RBAC/ownership, validação Pydantic, queries parametrizadas, CORS allowlist, CSP e headers, separação de privilégios, auditoria sem conteúdo, KB publicada/revisada, bloqueio de prompt injection, rate limit local de login/chat e ausência de segredos no repositório. Bearer tokens não usam cookies, eliminando CSRF de sessão por cookie. Providers possuem timeout/retry limitados e erros sem conteúdo. Uploads aceitam somente JPEG/PNG/WebP/GIF até 5 MB, têm nome sanitizado, persistência protegida, leitura owner-scoped e `Cache-Control: no-store`. Para produção: TLS, secret manager, antimalware/decodificação real de imagem, storage criptografado dedicado, rotação/revogação de token, rate limiting distribuído e MFA administrativo.
+
+Ameaças cobertas: IDOR inclusive em anexos, bypass RBAC, XSS (React + CSP), token theft/reuse (expiração), dupla reserva concorrente, prompt injection, KB poisoning (publish/review), secret exposure e logs inseguros.

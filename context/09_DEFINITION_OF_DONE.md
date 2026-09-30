@@ -1,0 +1,24 @@
+# Definition of Done
+P0:
+- docker compose up --build succeeds
+- seed demo accounts documented
+- web works
+- mobile core flow works or Expo-ready with documented start
+- DB migrations
+- RBAC backend
+- consent versioning
+- check-in/journal persistence
+- journal isolation tests
+- RAG + source refs
+- diagnosis/prescription refusal
+- safety + anti-dependency
+- appointments
+- privacy export/delete
+- aggregated dashboard n<5 suppression
+- admin KB/policy versioning
+- audit
+- research model card and isolation
+- tests/lint/typecheck/build PASS
+- QA_REPORT has zero P0 FAIL
+- README, SECURITY, PRIVACY, AI_SAFETY, MODEL_CARD, API, DATA_DICTIONARY, CHANGELOG
+- SCREENSHOT_GUIDE and DEMO_SCRIPT

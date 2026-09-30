@@ -1,0 +1,1 @@
+import {defineConfig} from '@playwright/test';const external=process.env.E2E_BASE_URL;export default defineConfig({testDir:'./e2e',webServer:external?undefined:{command:'npm run dev -- --host 127.0.0.1',url:'http://127.0.0.1:5173',reuseExistingServer:true},use:{baseURL:external||'http://127.0.0.1:5173'}})

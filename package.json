@@ -1,0 +1,11 @@
+{
+  "name": "terapia-monorepo",
+  "private": true,
+  "scripts": {
+    "test": "npm --prefix apps/web test",
+    "lint": "npm --prefix apps/web run lint",
+    "typecheck": "npm --prefix apps/web run typecheck && npm --prefix apps/mobile run typecheck",
+    "build": "npm --prefix apps/web run build",
+    "e2e": "npm --prefix apps/web run e2e"
+  }
+}

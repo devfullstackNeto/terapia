@@ -1,0 +1,141 @@
+{
+  "exported_at": "2026-09-30T16:33:01.724373",
+  "profile": {
+    "email": "jovem@demo.local",
+    "name": "Jovem Demo",
+    "role": "young_user"
+  },
+  "consents": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "version": "privacy-v3-demo-1",
+      "accepted": true,
+      "accepted_at": "2026-09-29T18:22:52.802639"
+    }
+  ],
+  "mood_checkins": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "mood": 3,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-29T18:24:05.735837"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T12:36:39.886608"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T12:44:21.380953"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T13:33:06.089268"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T13:33:31.229555"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T16:27:08.744391"
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T16:29:17.793806"
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "mood": 4,
+      "context": "Prefiro não informar",
+      "created_at": "2026-09-30T16:32:48.825876"
+    }
+  ],
+  "journal": [
+    {
+      "id": 4,
+      "user_id": 1,
+      "title": "Momento sintético 2026-09-30T16:27",
+      "content": "Registro inteiramente fictício criado durante a captura automática de evidências.",
+      "tags": "evidência,rotina,sintético",
+      "created_at": "2026-09-30T16:27:12.721338",
+      "updated_at": "2026-09-30T16:27:12.721346"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "title": "Momento sintético 2026-09-30T16:29",
+      "content": "Registro inteiramente fictício criado durante a captura automática de evidências.",
+      "tags": "evidência,rotina,sintético",
+      "created_at": "2026-09-30T16:29:21.762676",
+      "updated_at": "2026-09-30T16:29:21.762680"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "title": "Momento sintético 2026-09-30T16:32",
+      "content": "Registro inteiramente fictício criado durante a captura automática de evidências.",
+      "tags": "evidência,rotina,sintético",
+      "created_at": "2026-09-30T16:32:52.895660",
+      "updated_at": "2026-09-30T16:32:52.895663"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "slot_id": 1,
+      "status": "scheduled",
+      "created_at": "2026-09-29T18:23:15.858507"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "slot_id": 3,
+      "status": "scheduled",
+      "created_at": "2026-09-29T18:23:18.450723"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "slot_id": 2,
+      "status": "scheduled",
+      "created_at": "2026-09-30T16:27:19.760034"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "slot_id": 5,
+      "status": "scheduled",
+      "created_at": "2026-09-30T16:29:30.403641"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "slot_id": 6,
+      "status": "scheduled",
+      "created_at": "2026-09-30T16:32:59.713803"
+    }
+  ]
+}
